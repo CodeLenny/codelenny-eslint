@@ -1,0 +1,19 @@
+{
+  "name": "@codelenny/eslint-rules",
+  "version": "0.0.0",
+  "description": "My personal ESLint style rules.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeLenny/eslint-rules.git"
+  },
+  "author": "Ryan Leonard (http://ryanleonard.us/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeLenny/eslint-rules/issues"
+  },
+  "homepage": "https://github.com/CodeLenny/eslint-rules#readme"
+}
