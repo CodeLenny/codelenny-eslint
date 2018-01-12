@@ -10,6 +10,9 @@ function config(isNode) {
         "commonjs": true,
         "es6": true
     },
+    "parserOptions": {
+      "ecmaVersion": 8,
+    },
     "extends": "eslint:recommended",
     "rules": {
         "indent": [ "error", 2 ],
@@ -42,7 +45,14 @@ function config(isNode) {
         "key-spacing": [ "error", { afterColon: true, mode: "strict" } ],
         "new-parens": [ "error" ],
         "no-trailing-spaces": [ "error" ],
-        "space-before-function-paren": [ "error", "never" ],
+        "space-before-function-paren": [
+          "error",
+          {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "always"
+          },
+        ],
         "space-before-blocks": [ "error", { functions: "always", classes: "always", keywords: "always" } ],
         "arrow-spacing": [ "error", { before: true, after: true } ],
         "no-var": [ "error" ],
